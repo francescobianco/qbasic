@@ -1,0 +1,21 @@
+{
+  "name": "francescobianco.github.io",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Francesco Bianco",
+    "email": "info.francescobianco@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francescobianco/francescobianco.github.io.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --recursive | sed '/^\\s*$/d'",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --recursive"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0"
+  }
+}
