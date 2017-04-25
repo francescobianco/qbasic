@@ -6,7 +6,7 @@ var modifyCssUrls = require("gulp-modify-css-urls");
 var basename = require("path").basename;
 
 gulp.task("default", function() {
-    gulp.src("./node_modules/**/css/*.css")
+    gulp.src(["./node_modules/**/css/*.css", "./style/**/*.css"])
         .pipe(concatCss("style.css"))
         .pipe(modifyCssUrls({ modify: function (url, filePath) { return "../fonts/" + basename(url); } }))
         .pipe(gulp.dest("./css"));
