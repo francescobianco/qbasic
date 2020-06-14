@@ -2,9 +2,9 @@
   font-family: 'fixedsys';
   src: url("../fonts/fsex300-webfont.eot");
   src: url("../fonts/fsex300-webfont.eot?#iefix") format('embedded-opentype'),
-    url("../fonts/fsex300-webfont.woff") format('woff'),
-    url("../fonts/fsex300-webfont.ttf") format('truetype'),
-    url("../fonts/fsex300-webfont.svg#fixedsys") format('svg');
+       url("../fonts/fsex300-webfont.woff") format('woff'),
+       url("../fonts/fsex300-webfont.ttf") format('truetype'),
+       url("../fonts/fsex300-webfont.svg#fixedsys") format('svg');
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: none;
@@ -12,158 +12,163 @@
   font-smooth: never;
 }
 
-html,
-body {
+.system {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAHklEQVQoU2NkYGD4z8DAwMiAACh8nBIwjSAFQ98EAE3kEAmbk0M6AAAAAElFTkSuQmCC') repeat;
   margin: 0;
   padding: 0;
-}
-
-body.fixedsys-default {
-  padding: 2px;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAHklEQVQoU2NkYGD4z8DAwMiAACh8nBIwjSAFQ98EAE3kEAmbk0M6AAAAAElFTkSuQmCC') repeat;
-}
-
-.fixedsys-default h1,
-.fixedsys-default h2,
-.fixedsys-default h3,
-.fixedsys-default h4,
-.fixedsys-default h5,
-.fixedsys-default h6 {
-  margin: 0 0 8px 0;
-  padding: 0;
-  font-weight: normal !important;
-  font-size: 16px !important;
-}
-
-.fixedsys-default {
   font-family: 'fixedsys' !important;
   font-size: 16px !important;
 }
 
-.fixedsys-default small {
-  color: #999;
+.system * {
+  font-family: 'fixedsys' !important;
   font-size: 16px !important;
+  font-weight: normal !important;
 }
 
-.fixedsys-default a {
+.system h1,
+.system h2,
+.system h3,
+.system h4,
+.system h5,
+.system h6 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.system small {
+  color: #999;
+}
+
+.system a {
   color: #00A;
   font-size: 16px !important;
   text-decoration: none;
 }
 
-.fixedsys-default a:hover {
+.system a:hover {
   color: #00F;
   font-size: 16px !important;
   text-decoration: underline;
 }
 
-.fixedsys-default img {
+.system img {
   vertical-align: middle;
 }
 
-.fixedsys-default p {
+.system p {
   padding: 0;
   margin: 0 0 16px 0;
 }
 
-.fixedsys-default ul {
+.system ul {
   margin: 0 0 16px 0;
   padding: 0 0 0 16px;
   list-style-type: none;
 }
 
-.fixedsys-default li {
+.system li {
   word-break: break-all;
 }
 
-.fixedsys-default li:before {
+.system li:before {
   content: "- ";
   margin-left: -16px;
 }
 
-div.fixedsys-default {
-  padding: 11px;
-  border: 2px solid #777;
+.system div.panel {
+  border: 3px double #000;
   margin: 3px;
-  box-shadow: 1px 1px 1px #AAA;
+  box-shadow: 1px 1px 2px #000;
   background: #FFF;
 }
 
-div.fixedsys-console {
-  background: #222;
-  color: #AAA;
+.system div.panel > div.content {
+  padding: 10px;
 }
 
-div.fixedsys-footer {
+.system div.panel > div.console {
+  background: #222;
+  color: #AAA;
+  padding: 9px;
+  margin: 1px;
+}
+
+.system div.panel > div.editor {
+  background: #00A;
+  color: #FFF;
+  padding: 9px;
+  margin: 1px;
+}
+
+.system .footer {
   color: #999;
   padding: 0px 16px !important;
 }
 
-img.fixedsys-thumbnail-align-left {
+.system img.thumbnail-align-left {
   float: left !important;
   width: 32px !important;
   height: 32px !important;
   margin: 0 8px 0 0;
 }
 
-.fixedsys-inline {
+.system .inline {
   display: inline !important;
 }
 
-.fixedsys-pull-right {
+.system .pull-right {
   float: right;
   margin: 0 0 0 8px;
 }
 
-/**
- * Thanks to: https://github.com/IonicaBizau/gridly
- */
-
-.fixedsys-row {
+.system .row {
   display: flex;
 }
 
-.fixedsys-column {
+.system .column {
   flex: 1;
 }
 
 @media (max-width: 48em) {
-  .fixedsys-row {
+  .system .row {
     flex-direction: column;
   }
 
-  .fixedsys-column {
+  .system .column {
     flex: 0 0 auto;
   }
 }
 
 @media (min-width: 48em) {
-  .fixedsys-column-tenth {
+  .system .container {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .system .column-tenth {
     flex: 0 0 10%;
   }
 
-  .fixedsys-column-fifth {
+  .system .column-fifth {
     flex: 0 0 20%;
   }
 
-  .fixedsys-column-quarter {
+  .system .column-quarter {
     flex: 0 0 25%;
   }
 
-  .fixedsys-column-third {
+  .system .column-third {
     flex: 0 0 33.3333334%;
   }
 
-  .fixedsys-column-half {
+  .system .column-half {
     flex: 0 0 50%;
   }
 }
 
-.twitter-button {
+.system .twitter {
   padding: 2px 1px 0 2px;
-  height: 30px;
-  overflow: hidden;
+  height: 16px;
   background: #777;
-  /*#1b95e0;*/
-  border-radius: 5px;
 }
