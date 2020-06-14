@@ -20,7 +20,7 @@ body {
 
 body.fixedsys-default {
   padding: 2px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2M8c+bMfxMTE0ZGBgYGBhAHAEPkB2ZUl3wJAAAAAElFTkSuQmCC") repeat;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAHklEQVQoU2NkYGD4z8DAwMiAACh8nBIwjSAFQ98EAE3kEAmbk0M6AAAAAElFTkSuQmCC') repeat;
 }
 
 .fixedsys-default h1,
