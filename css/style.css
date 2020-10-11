@@ -108,8 +108,8 @@
 
 .system img.thumbnail-align-left {
   float: left !important;
-  width: 32px !important;
-  height: 32px !important;
+  width: 64px !important;
+  height: 64px !important;
   margin: 0 8px 0 0;
 }
 
